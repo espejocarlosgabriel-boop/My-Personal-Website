@@ -3,78 +3,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KnowAboutMe</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
- <img src="images/profile.jpg" alt="Profile photo of the website owner">
 
-        <h1>Carlos Gabriel N. Espejo</h1>
-        <p>Student | Learning and Developing</p>
+    <title>KnowAboutMe | Personal Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar container">
+            <a href="#home" class="logo">KnowAboutMe</a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
     <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                I am Carlos Gabriel N. Espejo, an aspiring programmer and a student at NDDU who wishes to learn the intricacies of coding, my interest in coding mostly comes from video games and how they're developed. There are such a vast majority of games with various different playstyles that makes me wonder how each genre is made to be unique from one another, I wish to learn this skill myself so one day, I may be able to make games myself as an indie developer or even work for a game developing company.
+
+        <!-- HOME -->
+        <section id="home">
+            <div class="hero container">
+
+                <div class="hero-content">
+                    <span class="hero-label">WELCOME TO MY PORTFOLIO</span>
+
+                    <h1>Hi, I'm Carlos Gabriel</h1>
+
+                    <p>
+                        I am a student at NDDU and a beginner programmer
+                        who is inspired to learn about the intricacies
+                        of programming as a whole. Welcome to my personal
+                        portfolio, where you can learn more about me,
+                        my skills, and my projects.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#about" class="button button-primary">
+                            About Me
+                        </a>
+
+                        <a href="#projects" class="button button-secondary">
+                            View My Projects
+                        </a>
+                    </div>
+                </div>
+
+                <div class="profile-card">
+                    <img
+                        src="profile.jpg"
+                        alt="Profile photo of Carlos Gabriel"
+                        class="profile-image"
+                        id="profile-image"
+                    >
+
+                    <div id="profile-placeholder" class="profile-placeholder">
+                        CG
+                    </div>
+
+                    <h2>Carlos Gabriel N. Espejo</h2>
+                    <p>Student | Beginner Programmer</p>
+                </div>
+
+            </div>
         </section>
 
+        <!-- ABOUT -->
+       <section id="about">
+       <div class="container">
+
+        <h2 class="section-title">About Me</h2>
+
+        <p class="section-description">
+            A little introduction to who I am and what inspires me.
+        </p>
+
+        <div class="about-grid">
+            <div class="card">
+                <h3>Who Am I?</h3>
+
+                <p>
+                    My name is Carlos Gabriel N. Espejo. I am
+                    currently a student at NDDU who is beginning
+                    to explore programming and web development.
+                </p>
+
+                <p>
+                    I enjoy learning new things, discovering how
+                    websites work, and developing my skills through
+                    projects and practice.
+                </p>
+
+                <p>
+                    This website is a place to introduce myself
+                    and share my progress, abilities, and work.
+                </p>
+            </div>
+        </div>
+</section>
+
+        <!-- SKILLS -->
         <section id="skills">
-            <h2>My Skills</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Canva</li>
-            </ul>
+            <div class="container">
+
+                <h2 class="section-title">My Skills</h2>
+
+                <p class="section-description">
+                    Here are some of the tools and technologies I am
+                    learning and using in my projects.
+                </p>
+
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+                        <div class="skill-icon">💻</div>
+                        <h3>C++</h3>
+                        <p>Programming fundamentals</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">🌐</div>
+                        <h3>HTML &amp; CSS</h3>
+                        <p>Website structure and design</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">⚙️</div>
+                        <h3>JavaScript</h3>
+                        <p>Basic website functionality</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">🎨</div>
+                        <h3>Canva &amp; Figma</h3>
+                        <p>Design and visual planning</p>
+                    </div>
+
+                </div>
+            </div>
         </section>
 
+        <!-- PROJECTS -->
         <section id="projects">
-            <h2>My Projects</h2>
-            <article>
-                <h3>Personal Website</h3>
-                <p>
-                    A personal website created for CCC 110 made using HTML, CSS, and Javascript.
+            <div class="container">
+
+                <h2 class="section-title">My Projects</h2>
+
+                <p class="section-description">
+                    Some projects and activities I have worked on while
+                    learning programming and web development.
                 </p>
-                <p>
-                    A website design built on Figma using its tools.
-                </p>
-            </article>
+
+                <div class="projects-grid">
+
+                    <div class="card project-card">
+                        <span class="project-number">PROJECT 01</span>
+                        <h3>Figma Website Design</h3>
+                        <p>
+                            A personal webpage concept planned and designed
+                            in Figma before turning it into code.
+                        </p>
+                    </div>
+
+                    <div class="card project-card">
+                        <span class="project-number">PROJECT 02</span>
+                        <h3>Local Git Repository</h3>
+                        <p>
+                            A project used to practice Git commands and
+                            learn how to track changes in source code.
+                        </p>
+                    </div>
+
+                    <div class="card project-card">
+                        <span class="project-number">PROJECT 03</span>
+                        <h3>HTML Portfolio Website</h3>
+                        <p>
+                            A personal website built using HTML, CSS,
+                            and JavaScript to introduce myself and
+                            display my work.
+                        </p>
+                    </div>
+
+                    <div class="card project-card">
+                        <span class="project-number">PROJECT 04</span>
+                        <h3>Website Deployment</h3>
+                        <p>
+                            Publishing my website using GitHub and Vercel
+                            so it can be viewed online.
+                        </p>
+
+                        <a
+                            href="#"
+                            class="project-link"
+                            id="live-project-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Add Live Website URL
+                        </a>
+                    </div>
+
+                </div>
+            </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
+        <!-- CONTACTS -->
+        <section id="contacts">
+            <div class="container">
 
-            <form id="contactForm">
-                <label for="name">Name</label>
-                <input id="name" name="name" type="text" required>
+                <h2 class="section-title">Get In Touch</h2>
 
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email" required>
+                <p class="section-description">
+                    Feel free to connect with me through my contact
+                    information and social media.
+                </p>
 
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
+                <div class="card contact-card">
 
-                <button type="submit">Send Message</button>
+                    <h3>Contact Information</h3>
 
-                <p id="formMessage" aria-live="polite"></p>
-            </form>
+                    <div class="contact-list">
+
+                        <div class="contact-item">
+    <strong>Messenger</strong>
+    <span>@Carlos Gabriel Ojepse</span>
+</div>
+
+<div class="contact-item">
+    <strong>Facebook</strong>
+    <span>Facebook</span>
+</div>
+
+<div class="contact-item">
+    <strong>Email</strong>
+    <span>ggab43304@gmail.com</span>
+</div>
+</div>
+                </div>
+            </div>
         </section>
+
     </main>
 
     <footer>
-        <p>&copy; 2026 Carlos Gabriel N. Espejo</p>
+        <p>
+            Carlos Gabriel N. Espejo | KnowAboutMe
+        </p>
+
+        <p>Designed and built with HTML, CSS, and JavaScript.</p>
     </footer>
 
-    <script src="script.js" defer></script>
 </body>
 </html>
